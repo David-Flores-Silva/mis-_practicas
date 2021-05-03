@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON en JS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+</head>
+
+  <body>
+    <h1>consola</h1>
+    <script type="text/javascript">
+      
+        let puerta = {
+          "id":1,
+          "nombre":"roble",
+          "precio":250,
+          "etiqueta":["casa", "madera", "roble"],
+
+          adios: function(){
+            console.log("adios");
+          }
+        }
+
+      console.log(puerta["nombre"]);
+      console.log(puerta.etiqueta);
+      console.log(puerta.etiqueta[1]);
+
+      function mens(){
+        console.log("holax1");
+        console.log("holax2");
+      }
+
+      mens();
+      puerta.adios()
+
+
+      let puerta2 = {
+
+              "id":"puerta de bambu",
+              "costo":355,
+              "pais":"china",
+
+              // podemos acceder a los elementos de un objeto con una funcion
+              // llamada get que puede retornar valores del objeto
+              getDatos:function(){
+                      console.log("id");
+                      console.log("costo");
+                      console.log("pais");
+              }
+      }
+
+      console.log();
+      puerta2.getDatos();
+    </script>
+  </body>
+</html>
